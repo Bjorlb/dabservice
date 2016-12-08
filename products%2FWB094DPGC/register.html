@@ -1,329 +1,331 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DABSERVICE.NO</title>
-
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <!-- Plugins -->
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap-select.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
-    <link href="css/style.teal.flat.css" rel="stylesheet" id="theme">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-
-    <!-- Top Header -->
-    <div class="top-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <ul class="list-inline pull-left">
-              <li class="hidden-xs"><a href="#"><i class="fa fa-phone"></i> +47 41 66 49 48</a></li>
-              <li class="hidden-xs"><a href="mailto:cs@domain.tld"><i class="fa fa-envelope"></i> Support@dabservice.no</a></li>
-            </ul>
-            <ul class="list-inline pull-right">
-              <li class="hidden-xs"><a href="wishlist.html"><i class="fa fa-heart"></i> Ønskeliste</a></li>
-              <li class="hidden-xs"><a href="compare.html"><i class="fa fa-align-left"></i> Samenlign</a></li>
-              <li>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Logg inn <span class="caret"></span>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-login" aria-labelledby="dropdownLogin" data-dropdown-in="zoomIn" data-dropdown-out="fadeOut">
-                    <form>
-                      <div class="form-group">
-                        <label for="username">Brukernavn</label>
-                        <input type="text" class="form-control" id="username" placeholder="Brukernavn">
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Passord</label>
-                        <input type="password" class="form-control" id="password" placeholder="Passord">
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"><span> Husk Meg</span>
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-default btn-sm"><i class="fa fa-long-arrow-right"></i> Logg inn</button>
-                      <a class="btn btn-default btn-sm pull-right" href="register.html" role="button">Registrer</a>
-                    </form>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Top Header -->
-
-    <!-- Middle Header -->
-    <div class="middle-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 logo">
-            <a href="index.html"><img alt="Logo" src="images/logo-indigo.png" class="img-responsive" /></a>
-          </div>
-          <div class="col-sm-8 col-md-6 search-box m-t-2">
-            <div class="input-group">
-              <input type="text" class="form-control" aria-label="Search here..." placeholder="Søk her..">
-              <div class="input-group-btn">
-                <select class="selectpicker hidden-xs" data-width="150px">
-                  <option value="0">Alle Kategorier</option>
-                  <option value="1">DAB+ Bilradio</option>
-                  <option value="2">DAB+ Adapter</option>
-                  <option value="3">Monteringsutstyr</option>
-                  <option value="4">Tilbehør</option>
-                </select>
-                <button type="button" class="btn btn-default btn-search"><i class="fa fa-search"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3 cart-btn hidden-xs m-t-2">
-            <button type="button" class="btn btn-default dropdown-toggle" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <i class="fa fa-shopping-cart"></i>Handlevogn :  <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-cart">
-              <div class="subtotal-cart">Totalt: <span></span></div>
-              <div class="text-center">
-                  <div class="btn-group" role="group" aria-label="View Cart and Checkout Button">
-                    <button class="btn btn-default btn-sm" type="button"><i class="fa fa-shopping-cart"></i>Vis Handelvogn</button>
-                    <button class="btn btn-default btn-sm" type="button"><i class="fa fa-check"></i> Gå Til Kassen</button>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Middle Header -->
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default shadow-navbar" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="cart.html" class="btn btn-default btn-cart-xs visible-xs pull-right">
-              <i class="fa fa-shopping-cart"></i> Habdlevogn : 4 items
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">HJEM</a></li>
-              <li><a href="products.html">PRODUKTER</a></li>
-              <li><a href="montering.html">MONTERING (ROGALAND)</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  OM OSS <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="about.html">OM OSS</a></li>
-                  <li><a href="contact.html">KONTAKT OSS</a></li>
-                  <li><a href="b2b.html">B2B</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-      </div>
-    </nav>
-    <!-- End Navigation Bar -->
-
-    <!-- Main Content -->
-    <div class="container m-t-3">
-      <div class="row">
-
-        <!-- Register Form -->
-        <div class="col-sm-8 login-register-form m-b-3">
-          <div class="title"><span>Registrere Konto</span></div>
-          <div class="row">
-            <form>
-              <div class="form-group col-sm-6">
-                <label for="nameInput">Navn</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Navn">
-              </div>
-              <div class="form-group col-sm-6">
-                <label for="emailInput">E-mail Addresse</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
-              </div>
-              <div class="form-group col-sm-6">
-                <label for="passwordInput">Passord</label>
-                <input type="password" class="form-control" id="passwordInput" placeholder="Passord">
-              </div>
-              <div class="form-group col-sm-6">
-                <label for="passwordConfirmInput">Bekreft Passord</label>
-                <input type="password" class="form-control" id="passwordConfirmInput" placeholder="Bekreft Passord">
-              </div>
-              <div class="form-group col-sm-6">
-                <label for="addressInput">Addresse</label>
-                <textarea class="form-control" rows="3" id="addressInput"></textarea>
-              </div>
-              <div class="col-xs-12">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"><span> Eg godtar <a href="#"><u>Betingelser og Vilkår.</u></a></span>
-                  </label>
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <button type="submit" class="btn btn-theme"><i class="fa fa-long-arrow-right"></i> Registrer</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- End Register Form -->
-
-        <!-- Login Form -->
-        <div class="col-sm-4">
-          <div class="title"><span>Allerede Kunde ?</span></div>
-          <form>
-            <div class="form-group">
-              <label for="emailInputLogin">E-mail addresse</label>
-              <input type="email" class="form-control" id="emailInputLogin" placeholder="E-mail">
-            </div>
-            <div class="form-group">
-              <label for="passwordInputLogin">Passord</label>
-              <input type="password" class="form-control" id="passwordInputLogin" placeholder="Passord">
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"><span> Husk Meg</span>
-              </label>
-            </div>
-            <button type="submit" class="btn btn-theme"><i class="fa fa-long-arrow-right"></i> Logg inn</button>
-          </form>
-        </div>
-        <!-- End Login Form -->
-
-      </div>
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Footer -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="title-footer"><span>Om Oss</span></div>
-            <ul>
-              <li>
-                Dabservice AS ble startet høsten 2016 med mål om å gjøre overgangen fra FM til DAB+ så lett som mulig når Norge nå som første land i verden skrur av FM-nettet, først i Nordland 11. Januar 2017. <a href="#">Les mer...</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="title-footer"><span>Informasjon</span></div>
-            <ul>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Ofte stilte spørsmål</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Policy</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Frakt og levering</a></li>
-            </ul>
-          </div>
-          <div class="clearfix visible-sm-block"></div>
-          <div class="col-md-3 col-sm-6">
-            <div class="title-footer"><span>Kategori</span></div>
-            <ul>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">1-DIN</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">2-din</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Universal DAB+ Adapter</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Integrert DAB+ Adapter</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="title-footer"><span>Nyhetsbrev</span></div>
-            <p>Skriv inn din E-post adresse for siste nytt om DAB+</p>
-            <div class="input-group">
-              <input class="form-control" type="text" placeholder="Email Address">
-              <span class="input-group-btn">
-                <button class="btn btn-default subscribe-button" type="button">SEND</button>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="title-footer"><span>Kontakt Oss</span></div>
-            <ul class="footer-icon">
-              <li><span><i class="fa fa-phone"></i></span> +47 416 64948</li>
-              <li><span><i class="fa fa-envelope"></i></span> <a href="mailto:cs@domain.tld">support@dabservice.no</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-          </div>
-          <div class="col-md-3 col-sm-6">
-          <div class="clearfix visible-sm-block"></div>
-            <div class="title-footer"><span>Betalingsmetoder</span></div>
-            <p>Vi støtter følgende betalingsmetoder</p>
-            <img src="images/payment-1.png" alt="Payment-1">
-            <img src="images/payment-2.png" alt="Payment-2">
-            <img src="images/payment-5.png" alt="Payment-5">
-            <img src="images/payment-bitcoin.png" alt="Payment-bitcoin">
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="title-footer"><span>Min Konto</span></div>
-            <ul>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Mine Kjøp</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Kuponger</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Poeng</a></li>
-              <li><i class="fa fa-angle-double-right"></i> <a href="#">Logg ut</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="text-center copyright">
-        Copyright &copy; 2016 DABSERVICE.NO
-      </div>
-    </div>
-    <!-- End Footer -->
-
-    <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
-      <i class="fa fa-angle-double-up"></i>
-    </a>
-
-    <div class="chooser chooser-hide">
-      <div class="chooser-toggle"><button class="btn btn-warning" type="button"><i class="fa fa-paint-brush bigger-130"></i></button></div>
-      <div class="chooser-content">
-        <label>Color</label>
-        <select name="color-chooser" id="color-chooser" class="form-control input-sm selectpicker">
-          <option value="indigo">Indigo</option>
-          <option value="red">Red</option>
-          <option value="teal">Teal</option>
-          <option value="brown">Brown</option>
-        </select>
-        <label class="m-t-1">Style</label>
-        <select name="style-chooser" id="style-chooser" class="form-control input-sm selectpicker">
-          <option value="flat">Flat</option>
-          <option value="rounded">Rounded</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <!-- Plugins -->
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/mimity.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DABSERVICE.NO</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Plugins -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.default.css" rel="stylesheet">
+    <link href="css/style.teal.flat.css" rel="stylesheet" id="theme">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="list-inline pull-left">
+              <li class="hidden-xs"><a href="#"><i class="fa fa-phone"></i> +47 41 66 49 48</a></li>
+              <li class="hidden-xs"><a href="mailto:cs@domain.tld"><i class="fa fa-envelope"></i> Support@dabservice.no</a></li>
+              <li class="hidden-xs"><a href="#"><i class"#"></i> Gratis Frakt over 1000kr!</a></li>
+            </ul>
+            <ul class="list-inline pull-right">
+              <li class="hidden-xs"><a href="wishlist.html"><i class="fa fa-heart"></i> Ønskeliste</a></li>
+              <li class="hidden-xs"><a href="compare.html"><i class="fa fa-align-left"></i> Samenlign</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Logg inn <span class="caret"></span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-login" aria-labelledby="dropdownLogin" data-dropdown-in="zoomIn" data-dropdown-out="fadeOut">
+                    <form>
+                      <div class="form-group">
+                        <label for="username">Brukernavn</label>
+                        <input type="text" class="form-control" id="username" placeholder="Brukernavn">
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Passord</label>
+                        <input type="password" class="form-control" id="password" placeholder="Passord">
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"><span> Husk Meg</span>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-default btn-sm"><i class="fa fa-long-arrow-right"></i> Logg inn</button>
+                      <a class="btn btn-default btn-sm pull-right" href="register.html" role="button">Registrer</a>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Header -->
+
+    <!-- Middle Header -->
+    <div class="middle-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 logo">
+            <a href="index.html"><img alt="Logo" src="images/logo-indigo.png" class="img-responsive" /></a>
+          </div>
+          <div class="col-sm-8 col-md-6 search-box m-t-2">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Search here..." placeholder="Søk her..">
+              <div class="input-group-btn">
+                <select class="selectpicker hidden-xs" data-width="150px">
+                  <option value="0">Alle Kategorier</option>
+                  <option value="1">DAB+ Bilradio</option>
+                  <option value="2">DAB+ Adapter</option>
+                  <option value="3">Monteringsutstyr</option>
+                  <option value="4">Tilbehør</option>
+                </select>
+                <button type="button" class="btn btn-default btn-search"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3 cart-btn hidden-xs m-t-2">
+            <button type="button" class="btn btn-default dropdown-toggle" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <i class="fa fa-shopping-cart"></i>Handlevogn :  <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-cart">
+              <div class="subtotal-cart">Totalt: <span></span></div>
+              <div class="text-center">
+                  <div class="btn-group" role="group" aria-label="View Cart and Checkout Button">
+                    <button class="btn btn-default btn-sm" type="button"><i class="fa fa-shopping-cart"></i>Vis Handelvogn</button>
+                    <button class="btn btn-default btn-sm" type="button"><i class="fa fa-check"></i> Gå Til Kassen</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Middle Header -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default shadow-navbar" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="cart.html" class="btn btn-default btn-cart-xs visible-xs pull-right">
+              <i class="fa fa-shopping-cart"></i> Habdlevogn : 4 items
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">HJEM</a></li>
+              <li><a href="products.html">PRODUKTER</a></li>
+              <li><a href="montering.html">MONTERING (ROGALAND)</a></li>
+              <li><a href="dabinfo.html">DAB INFO</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  OM OSS <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="about.html">OM OSS</a></li>
+                  <li><a href="contact.html">KONTAKT OSS</a></li>
+                  <li><a href="b2b.html">B2B</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Main Content -->
+    <div class="container m-t-3">
+      <div class="row">
+
+        <!-- Register Form -->
+        <div class="col-sm-8 login-register-form m-b-3">
+          <div class="title"><span>Registrere Konto</span></div>
+          <div class="row">
+            <form>
+              <div class="form-group col-sm-6">
+                <label for="nameInput">Navn</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Navn">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="emailInput">E-mail Addresse</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="passwordInput">Passord</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Passord">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="passwordConfirmInput">Bekreft Passord</label>
+                <input type="password" class="form-control" id="passwordConfirmInput" placeholder="Bekreft Passord">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="addressInput">Addresse</label>
+                <textarea class="form-control" rows="3" id="addressInput"></textarea>
+              </div>
+              <div class="col-xs-12">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"><span> Eg godtar <a href="#"><u>Betingelser og Vilkår.</u></a></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <button type="submit" class="btn btn-theme"><i class="fa fa-long-arrow-right"></i> Registrer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Register Form -->
+
+        <!-- Login Form -->
+        <div class="col-sm-4">
+          <div class="title"><span>Allerede Kunde ?</span></div>
+          <form>
+            <div class="form-group">
+              <label for="emailInputLogin">E-mail addresse</label>
+              <input type="email" class="form-control" id="emailInputLogin" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <label for="passwordInputLogin">Passord</label>
+              <input type="password" class="form-control" id="passwordInputLogin" placeholder="Passord">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"><span> Husk Meg</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-theme"><i class="fa fa-long-arrow-right"></i> Logg inn</button>
+          </form>
+        </div>
+        <!-- End Login Form -->
+
+      </div>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="title-footer"><span>Om Oss</span></div>
+            <ul>
+              <li>
+                Dabservice AS ble startet høsten 2016 med mål om å gjøre overgangen fra FM til DAB+ så lett som mulig når Norge nå som første land i verden skrur av FM-nettet, først i Nordland 11. Januar 2017. <a href="#">Les mer...</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="title-footer"><span>Informasjon</span></div>
+            <ul>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Ofte stilte spørsmål</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Policy</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Frakt og levering</a></li>
+            </ul>
+          </div>
+          <div class="clearfix visible-sm-block"></div>
+          <div class="col-md-3 col-sm-6">
+            <div class="title-footer"><span>Kategori</span></div>
+            <ul>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">1-DIN</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">2-din</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Universal DAB+ Adapter</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Integrert DAB+ Adapter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="title-footer"><span>Nyhetsbrev</span></div>
+            <p>Skriv inn din E-post adresse for siste nytt om DAB+</p>
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Email Address">
+              <span class="input-group-btn">
+                <button class="btn btn-default subscribe-button" type="button">SEND</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="title-footer"><span>Kontakt Oss</span></div>
+            <ul class="footer-icon">
+              <li><span><i class="fa fa-phone"></i></span> +47 416 64948</li>
+              <li><span><i class="fa fa-envelope"></i></span> <a href="mailto:cs@domain.tld">support@dabservice.no</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+          </div>
+          <div class="col-md-3 col-sm-6">
+          <div class="clearfix visible-sm-block"></div>
+            <div class="title-footer"><span>Betalingsmetoder</span></div>
+            <p>Vi støtter følgende betalingsmetoder</p>
+            <img src="images/payment-1.png" alt="Payment-1">
+            <img src="images/payment-2.png" alt="Payment-2">
+            <img src="images/payment-5.png" alt="Payment-5">
+            <img src="images/payment-bitcoin.png" alt="Payment-bitcoin">
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="title-footer"><span>Min Konto</span></div>
+            <ul>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Mine Kjøp</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Kuponger</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Poeng</a></li>
+              <li><i class="fa fa-angle-double-right"></i> <a href="#">Logg ut</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center copyright">
+        Copyright &copy; 2016 DABSERVICE.NO
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <div class="chooser chooser-hide">
+      <div class="chooser-toggle"><button class="btn btn-warning" type="button"><i class="fa fa-paint-brush bigger-130"></i></button></div>
+      <div class="chooser-content">
+        <label>Color</label>
+        <select name="color-chooser" id="color-chooser" class="form-control input-sm selectpicker">
+          <option value="indigo">Indigo</option>
+          <option value="red">Red</option>
+          <option value="teal">Teal</option>
+          <option value="brown">Brown</option>
+        </select>
+        <label class="m-t-1">Style</label>
+        <select name="style-chooser" id="style-chooser" class="form-control input-sm selectpicker">
+          <option value="flat">Flat</option>
+          <option value="rounded">Rounded</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!-- Plugins -->
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/mimity.js"></script>
+  </body>
 </html>
